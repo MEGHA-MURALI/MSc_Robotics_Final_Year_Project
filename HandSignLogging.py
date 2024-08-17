@@ -68,7 +68,7 @@ def logging_csv(number, landmark_list):
 
 # Copying mediapipe instances of hand skeleton drawing and hand detection model instances to custom variables
 mp_drawing = mp.solutions.drawing_utils
-mp_drawing_styles = mp.solutions.drawing_styles
+#mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
 # initializing video capturing device 'default webcam'
@@ -81,7 +81,7 @@ sign_count = 0
 signName = sys.argv[1]
 
 # Initializing hand detection instance with custom parameters
-with mp_hands.Hands(model_complexity=0, min_detection_confidence=0.7, min_tracking_confidence=0.7,max_num_hands=1) as hands:
+with mp_hands.Hands(min_detection_confidence=0.5, min_tracking_confidence=0.5,max_num_hands=1) as hands:
     # While loop will run as long as the camera is in a functional state
     while cap.isOpened():
         # Reading image from the camera
@@ -142,9 +142,7 @@ with mp_hands.Hands(model_complexity=0, min_detection_confidence=0.7, min_tracki
                 mp_drawing.draw_landmarks(
                     image,
                     hand_landmarks,
-                    mp_hands.HAND_CONNECTIONS,
-                    mp_drawing_styles.get_default_hand_landmarks_style(),
-                    mp_drawing_styles.get_default_hand_connections_style())
+                    mp_hands.HAND_CONNECTIONS)
 
         font = cv2.FONT_HERSHEY_SIMPLEX
         origin = (50, 50)
