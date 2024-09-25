@@ -35,7 +35,7 @@ Please download the following files for testing:
 
 - **Python Version**: The project was developed using Python 3.6.
 - **Dependencies**: 
-   - You may need to install **ffmpeg** for audio processing. [Here is a YouTube tutorial](#) for installation guidance.
+   - You may need to install **ffmpeg** for audio processing. [https://www.youtube.com/watch?v=JR36oH35Fgg]# for installation guidance.
    - **MediaPipe** was installed earlier, and its versions may differ. Please reinstall if necessary.
 
 ### Testing Instructions
@@ -44,13 +44,6 @@ Please download the following files for testing:
 2. Ensure **ffmpeg** and all necessary dependencies are installed.
 3. Follow the instructions in the notebook to test the audio translation models.
 
-### Troubleshooting
-
-- If there are any errors during the tests, please let me know.
-
-### Recording Test Results
-
-Once you have completed the tests, kindly record the results (whether the tests worked or not) in this [Google Spreadsheet](#).
 
 ### Image-Based Testing
 
