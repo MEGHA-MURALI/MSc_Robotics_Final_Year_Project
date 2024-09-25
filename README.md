@@ -45,9 +45,5 @@ Please download the following files for testing:
 3. Follow the instructions in the notebook to test the audio translation models.
 
 
-### Image-Based Testing
-
-For image-based testing, you can use the images from [my blog](#). Please note that the images for number recognition will be updated soon.
-
 
 Thank you for your efforts in testing the system!
