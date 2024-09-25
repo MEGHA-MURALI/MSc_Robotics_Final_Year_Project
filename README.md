@@ -22,9 +22,6 @@ The core of the system relies on **MediaPipe** for hand landmark detection, **pr
 
 This system is a powerful tool for enhancing communication through gesture recognition and speech synthesis, making it particularly useful for educational and assistive technologies.
 
----
-
-# Project: Audio Models Testing (English to Arabic Translation)
 
 ## Files for Testing
 
@@ -59,6 +56,5 @@ Once you have completed the tests, kindly record the results (whether the tests 
 
 For image-based testing, you can use the images from [my blog](#). Please note that the images for number recognition will be updated soon.
 
----
 
 Thank you for your efforts in testing the system!
